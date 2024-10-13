@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    font-family: "Lato", "Arial", "Verdana", sans-serif;
+    color: #202020;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100vh;
+    position: relative; /* Required for positioning the content above the video */
+    overflow: hidden; /* Prevents overflow issues */
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Places video behind other content */
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+
+a:link, a:visited {
+    color: #d27803;
+    text-decoration: none;
+    border-bottom: 1px solid #d27803;
+    padding-bottom: 1px;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+a:hover, a:active {
+    border-bottom: 1px solid transparent;
+    color: #333333;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1140px; /* Adjusted for better responsiveness */
+    transform: translate(-50%, -50%);
+    text-align: center; /* Center text */
+    z-index: 1; /* Ensure text is above video */
+    padding-bottom: 80px;
+}
+
+.header-text p {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    text-align: center;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    border-top: 2px solid #ccc; /* Add the line above */
+    padding-top: 40px; /* Adjust the spacing between the line and the text */
+}
+
+.btn {
+    display: inline-block; /* Ensure buttons line up properly */
+    margin-top: 20px; /* Spacing above buttons */
+    position: absolute;
+    top: 125%;
+}
+
+.btn-full {
+    background-color: #f08842;
+    color: #fff;
+    left: 5%;
+}
+
+.btn-border {
+    border: 1px solid #f08842;
+    color: #fff;
+    left: 20%;
+}
+
+.btn:link, .btn:visited {
+    padding: 10px 30px;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.btn:hover, .btn:active {
+    background-color: #a34302;
+}
+
+.btn-full:hover, .btn-full:active {
+    border: 1px solid #a34302;
+}
+
+.btn-border:hover, .btn-border:active {
+    border: 1px solid #a34302;
+    color: #fff;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+.main-navs {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-navs li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-navs li a:link, .main-navs li a:visited {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding-bottom: 8px;
+    transition: border-bottom 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.main-navs li a:hover, .main-navs li a:active {
+    border-bottom: 2px solid #f08842;
+}
